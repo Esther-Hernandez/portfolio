@@ -7,7 +7,8 @@ A portfolio page created for the Udacity's Full Stack Web Developer Nanodegree p
 ## What's Included
 
 - portfolio.html : Contains the main HTML content for the portfolio.
-- style.css : Contains the HTML style content.
+- css/style.css : Contains the HTML style content.
+- images folder
   
 ## Conclusion
 
