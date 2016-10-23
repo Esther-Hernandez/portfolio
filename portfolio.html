@@ -2,20 +2,17 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" contact="IE=edge">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Portfolio</title>
         <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
-        <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="http://weloveiconfonts.com/api/?family=zocial" />
         <link rel="stylesheet" href="css/style.css">
-        <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
-        <script type="text/javascript" src="js/bootstrap.min.js"></script>
     </head>
     <body>
         <div class="container">
-            <div class="row">
+            <div class="row division">
                 <header>
                     <div class="col-md-6">
                         <img class="title-logo" src="images/udacity-logo.jpg" alt="Udacity Logo">
@@ -25,11 +22,6 @@
                         <h4 class="title-min text-bold">Web Developer</h4>
                     </div>
                 </header>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <hr class="division">
-                </div>
             </div>
             <div class="row">
                 <div class="col-md-6">
@@ -75,7 +67,7 @@
                     <h2 class="text-muted">Featured Work</h2>
                 </div>
             </div>
-            <div class="row text-center">
+            <div class="row text-center division-muted">
                 <div class="col-md-4">
                     <img class="img-responsive img-border" src="images/movie-site.png" alt="Movie Website" data-toggle="modal" data-target="#modal-movie">
                     <h3 class="work-title text-uppercase">Fresh Tomatoes</h3>
@@ -94,21 +86,16 @@
                     <a class="text-bold" target="_blank" href="https://github.com/Esther-Hernandez/form-template">https://github.com/Esther-Hernandez/form-template</a>
                 </div>
             </div>
-             <div class="row">
-                <div class="col-md-12">
-                    <hr>
-                </div>
-            </div>
         </div>
         <!-- Movies Modal -->
-        <div class="modal fade" id="modal-movie" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal fade" id="modal-movie" tabindex="-1" role="dialog" aria-labelledby="movies-label" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h4 class="modal-title" id="myModalLabel">Fresh Tomatoes Movie and TV Show</h4>
+                        <h4 class="modal-title" id="movies-label">Fresh Tomatoes Movie and TV Show</h4>
                     </div>
                     <div class="modal-body">
-                        <img class="img-responsive img-border" src="images/movie-site.png">
+                        <img class="img-responsive img-border" src="images/movie-site.png" alt="Movie Website">
                         <p class="work-description">This was my first project in this class. Creates and opens an HTML file containing a section of Movies and a section of TV Shows. When selecting a Movie, the movie's trailer will automatically play. When selecting a TV Show, a preview of the site TV Guide will display showing when the episodes will be aired in a station.</p>
                     </div>
                     <div class="modal-footer">
@@ -118,14 +105,14 @@
             </div>
         </div>
         <!-- Login Modal -->
-        <div class="modal fade" id="modal-login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal fade" id="modal-login" tabindex="-1" role="dialog" aria-labelledby="login-label" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h4 class="modal-title" id="myModalLabel">Login Form</h4>
+                        <h4 class="modal-title" id="login-label">Login Form</h4>
                     </div>
                     <div class="modal-body">
-                        <img class="img-responsive" src="images/login-form.png">
+                        <img class="img-responsive" src="images/login-form.png" alt="Login Form Image">
                         <p class="work-description">A simple page which contains the company's logo and title. It includes a login form with username and password fields. Built with Bootstrap.</p>
                     </div>
                     <div class="modal-footer">
@@ -135,14 +122,14 @@
             </div>
         </div>
         <!-- Form Modal -->
-        <div class="modal fade" id="modal-form" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal fade" id="modal-form" tabindex="-1" role="dialog" aria-labelledby="form-label" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h4 class="modal-title" id="myModalLabel">Form</h4>
+                        <h4 class="modal-title" id="form-label">Form</h4>
                     </div>
                     <div class="modal-body">
-                        <img class="img-responsive" src="images/form-site.png">
+                        <img class="img-responsive" src="images/form-site.png" alt="Form Site Image">
                             <p class="work-description">A simple page form template with a customized Bootstrap navbar. A logo was added to the navbar and the color styles and actions were customized. Built with Bootsrap.</p>
                     </div>
                     <div class="modal-footer">
@@ -151,13 +138,20 @@
                 </div>
             </div>
         </div>
-        <footer>
-            <div class="social-network">
-                <a href="#" class="zocial-twitter"></a>
-                <a href="#" class="zocial-facebook"></a>
-                <a href="#" class="zocial-googleplus"></a>
-                <a href="#" class="zocial-linkedin"></a>
+        <div class="row">
+            <div class="col-md-12">
+                <footer>
+                    <div class="social-network">
+                        <a href="#" class="zocial-twitter"></a>
+                        <a href="#" class="zocial-facebook"></a>
+                        <a href="#" class="zocial-googleplus"></a>
+                        <a href="#" class="zocial-linkedin"></a>
+                    </div>
+                </footer>
             </div>
-        </footer>
+        </div>
+        <!-- Script Files -->
+        <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
     </body>
 </html>
