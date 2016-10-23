@@ -1,0 +1,150 @@
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    color: #2d3c49;
+    font-size: 15px;
+}
+
+.text-muted {
+    color: #8ca4b0;
+    font-size: 35px;
+}
+
+.text-thin {
+    font-weight: 300;
+}
+
+.text-bold {
+    font-weight: 400;
+}
+
+.title-super {
+    font-size: 45px;
+}
+
+.title-min {
+    font-size: 20px;
+}
+
+.title-logo {
+    margin-top: 20px;
+}
+
+.division {
+    border-top: 4px solid #7d97ad;
+}
+
+.img-round {
+    border-radius: 25%;
+}
+
+.work-description {
+    text-align: center;
+    margin-top: 20px;
+}
+
+ul {
+    list-style: none;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+    min-width: 30%;
+}
+
+.work-division {
+    display: none;
+}
+
+.modal-footer {
+    text-align: center;
+}
+
+a:visited, a:link, a:active {
+    text-decoration: none;
+    color: #2d3c49;
+}
+
+footer {
+  text-align: center;
+}
+
+.social-network {
+    font-family: 'zocial', sans-serif;
+    font-size: 20px;
+    color: #02b3e4 !important;
+    text-shadow: 2px 2px 2px #aaa;
+    margin-bottom: 10px;
+}
+
+[class*="zocial-"] {
+    margin-right: 20px;
+    color: #02b3e4 !important;
+}
+
+/* Breakpoints */
+@media screen and (max-width: 475px) {
+    li {
+        min-width: 100%;
+        margin-left: 20%;
+    }
+
+    .title-logo {
+        margin-left: 40%;
+    }
+
+    .dev-img {
+        margin-left: 3%;
+    }
+
+    .title-super, .title-min {
+        text-align: center;
+    }
+
+    .work-division {
+        display: block;
+        margin-bottom: 10px;
+        border-top: 1px solid #7d97ad;
+    }
+}
+
+@media screen and (min-width: 476px) and (max-width: 760px) {
+    .title-logo {
+        margin-left: 43%;
+    }
+
+    .dev-img {
+        margin-left: 3%;
+    }
+
+    .title-super, .title-min {
+        text-align: center;
+    }
+
+    .work-division {
+        display: block;
+        margin-bottom: 20px;
+        border-top: 1px solid #7d97ad;
+    }
+}
+
+@media screen and (min-width: 761px) and (max-width: 990px) {
+    .title-logo {
+        margin-left: 45%;
+    }
+
+    .dev-img {
+        margin-left: 8%;
+    }
+
+    .title-super, .title-min {
+        text-align: center;
+    }
+
+    .work-division {
+        display: block;
+        margin-bottom: 30px;
+        border-top: 1px solid #7d97ad;
+    }
+}
